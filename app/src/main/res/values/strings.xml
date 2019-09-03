@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Model Injection Example</string>
+    <string name="hint_todo_item_test">Todo…</string>
+    <string name="title_new_todo">New Todo</string>
+    <string name="title_edit_todo">Edit Todo</string>
+    <string name="title_delete">Delete</string>
+</resources>
