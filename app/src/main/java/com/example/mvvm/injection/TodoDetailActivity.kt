@@ -30,7 +30,7 @@ class TodoDetailActivity: AppCompatActivity() {
         todoId = intent.getIntExtra(KEY_TODO_ID, -1)
         if(todoId >= 0) {
             setTitle(R.string.title_edit_todo)
-            viewModel.setCurrentTodoText(todoId)
+            viewModel.setTextWithTodoText(todoId)
         } else {
             setTitle(R.string.title_new_todo)
         }

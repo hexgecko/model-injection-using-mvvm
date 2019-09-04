@@ -12,7 +12,7 @@ class TodoDetailViewModel: ViewModel(), KoinComponent {
 
     val text = MutableLiveData<String>().apply { value = "" }
 
-    fun setCurrentTodoText(id: Int) {
+    fun setTextWithTodoText(id: Int) {
         text.value = todoModel.getTodo(id)?.text ?: ""
     }
 
