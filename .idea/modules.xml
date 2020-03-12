@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Model Injection Using MVVM.iml" filepath="$PROJECT_DIR$/Model Injection Using MVVM.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Model Injection Using MVVM.iml" filepath="$PROJECT_DIR$/Model Injection Using MVVM.iml" group="Model Injection Using MVVM" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="Model Injection Using MVVM/app" />
     </modules>
   </component>
 </project>

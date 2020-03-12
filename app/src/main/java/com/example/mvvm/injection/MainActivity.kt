@@ -1,17 +1,15 @@
 package com.example.mvvm.injection
 
-import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import android.widget.CheckBox
 import android.widget.TextView
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProviders
+import androidx.lifecycle.ViewModelProvider
 import com.example.mvvm.injection.model.todo.TodoItem
 import com.example.mvvm.injection.viewmodel.MainViewModel
 import com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -22,7 +20,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val viewModel = ViewModelProviders.of(this).get(MainViewModel::class.java)
+        val viewModel = ViewModelProvider(this).get(MainViewModel::class.java)
 
         bindTodoList(findViewById(R.id.todo_list), viewModel.todoList, viewModel::toggleComplete)
         bindNewTodo(findViewById(R.id.new_todo)) {

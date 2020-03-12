@@ -9,7 +9,7 @@ import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProviders
+import androidx.lifecycle.ViewModelProvider
 import com.example.mvvm.injection.viewmodel.TodoDetailViewModel
 
 class TodoDetailActivity: AppCompatActivity() {
@@ -24,7 +24,7 @@ class TodoDetailActivity: AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_todo_detail)
 
-        viewModel = ViewModelProviders.of(this).get(TodoDetailViewModel::class.java)
+        viewModel = ViewModelProvider(this).get(TodoDetailViewModel::class.java)
 
         // If a id was given as an argument, the item is updated.
         todoId = intent.getIntExtra(KEY_TODO_ID, -1)
